@@ -4,7 +4,7 @@ metadata:
   name: elastic-ingress
 spec:
   rules:
-  - host: elastic.altyn-i.kz
+  - host: 
     http:
       paths:
         - backend:
