@@ -4,7 +4,7 @@ metadata:
   name: kibana-ingress
 spec:
   rules:
-  - host: kibana.altyn-i.kz
+  - host: 
     http:
       paths:
         - backend:
