@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kibana-ingress
+spec:
+  rules:
+  - host: kibana.altyn-i.kz
+    http:
+      paths:
+        - backend:
+            serviceName: kibana
+            servicePort: 5601

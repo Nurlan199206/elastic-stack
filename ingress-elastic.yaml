@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: elastic-ingress
+spec:
+  rules:
+  - host: elastic.altyn-i.kz
+    http:
+      paths:
+        - backend:
+            serviceName: elasticsearch-logging
+            servicePort: 9200
